@@ -14,7 +14,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 import torchtext.vocab as vocab_module
 
-df = pd.read_csv(r"/Users/ethanli/Desktop/Projects/PyTorch Practice/dataset.csv")
+df = pd.read_csv("dataset.csv")
 
 classifier = pipeline("sentiment-analysis")
 df['sentiment'] = classifier(df['ParaphrasedSubject'].tolist())
