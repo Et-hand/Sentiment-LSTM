@@ -82,3 +82,6 @@ The scheduler lowers the learning rate when the loss plateaus; this is the best 
 Large weights will overinfluence other nodes and create disruptions, which is common in overfitting, so normalizing all the weights to be under 1.0 also helped.
 #### Gradient Clipping
 This prevents the exploding gradient problem by setting a cap during backprop, so it prevents too much overfitting. 
+
+## Confusion Matrix
+<img width="900" height="750" alt="image" src="https://github.com/user-attachments/assets/303ccc3f-d8e3-456d-a798-bedeb29a0234" />
