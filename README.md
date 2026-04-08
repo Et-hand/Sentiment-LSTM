@@ -63,8 +63,10 @@ HIDDEN_DIM was set to 128. The small database did not need that many parameters,
 
 ### The Overfitting Problem
 This was the most complex problem: my outputs would look like this:
-| Epoch 5 |  Train Loss: 0.24  |  Val Loss: 0.41 |
-| Epoch 10 | Train Loss: 0.09  |  Val Loss: 0.57 |
+| Epoch | Train Loss | Val Loss |
+|-------|------------|----------|
+| 5     | 0.24       | 0.41     |
+| 10    | 0.09       | 0.57     |
 
 This was a clear signal that it was overfitting; the training set was getting better, but the validation loss would increase. The gap between the training loss and validation loss was getting larger. 
 
