@@ -1,5 +1,6 @@
 # Sentiment-LSTM
 exploration.ipynb - My notebook that documents more of my thinking process than train.py
+
 train.py - A script that can be directly run.
 
 The dataset contains Saudi Arabian Financial News, and I used HuggingFace's Sentiment Analysis to classify them as my benchmark.
