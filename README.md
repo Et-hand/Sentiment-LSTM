@@ -1,4 +1,5 @@
 # Sentiment-LSTM
+A bidirectional LSTM for binary sentiment classification of financial news, achieving 86.2% test accuracy and 0.85 F1 on Saudi Arabian financial headlines
 
 ## Project Overview
 This project's goal was to classify financial news as either "positive" or "negative". The dataset contains Saudi Arabian Financial News, and I used HuggingFace's Sentiment Analysis to classify them as my benchmark.
@@ -42,7 +43,7 @@ Input Text → Tokenization (NLTK) → Integer Encoding → GloVe-100 Embeddings
 | Validation Loss | 0.3193 |
 | Test Accuracy | 86.23% |
 
-## How I refined my code:
+## Engineering Decisions:
 ### Neutral
 I initially had my code classify between positive, negative, and neutral. I realized later that HuggingFace only classifies data as positive or negative. I'll be sure to fully look through my transformed data and make sure its consistent to prevent careless mistakes. 
 
